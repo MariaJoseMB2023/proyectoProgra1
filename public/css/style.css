@@ -1,0 +1,65 @@
+body{
+    background: #83a4d4; 
+    background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  
+    background: linear-gradient(to right, #b6fbff, #83a4d4);
+ 
+}
+
+
+body {
+    font-family: "Roboto", sans-serif !important;
+}
+
+.fondo-login {
+    background-color: rgba(240, 239, 247, 0.952);
+}
+
+.login-form {
+    background-color: white;
+    width: 350px;
+    border-radius: 15px;
+}
+
+.inputLR-340px {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 340px;
+}
+
+.padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hijo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ctext-fb {
+    font-weight: bold;
+    text-align: center;
+}
+
+.centrado {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.Top-25px {
+    margin-top: 25px;
+}
+
+.Bottom-25px {
+    margin-bottom: 25px;
+}
+
+.bloquear-boton {
+    pointer-events: none;
+    cursor: default;
+    background-color: gray;
+    color: white;
+}
