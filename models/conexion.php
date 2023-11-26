@@ -6,12 +6,20 @@
             $host = "localhost";
             $db = "srd_ujmd";
 
-            $conexion = new PDO("mysql:host=$host;dbname=$db;",$user,$pass,
-            array(PDO::MYSQL_ATTR_INIT_COMMAND=> "set names utf8"));
+            $conexion = new PDO(
+                "mysql:host=$host;dbname=$db;",
+                $user,
+                $pass,
+                array(PDO::MYSQL_ATTR_INIT_COMMAND=> "set names utf8")
+            );
 
-            return $conexion; //me quede en elminuto 53:46
+            return $conexion; 
 
         }
+
+        
+
+
     }
 
 ?>

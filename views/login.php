@@ -1,7 +1,7 @@
 <div class="padre">
     <div class="hijo">
         <div class="centrado">
-            <img src="../public/img/login/user.png" width="150px" talt="">
+            <img src="./public/img/login/user.png" width="150px" talt="">
         </div>
         <form id="form-login">
             <div class="input-group mb-3">
