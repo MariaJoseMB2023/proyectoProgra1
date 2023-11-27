@@ -10,7 +10,7 @@
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"><b>Contraseña</b></span>
-                <input type="text" class="form-control" name="clave" placeholder="Ingrese Clave" required>
+                <input type="password" class="form-control" name="clave" placeholder="Ingrese Clave" required>
             </div>
             <button class="btn btn-primary"><b>Acceder</b></button>
         </form>

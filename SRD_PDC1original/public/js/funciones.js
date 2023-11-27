@@ -21,4 +21,14 @@ $(document).ready(function() { //dentro de él vamos a crear diferentes funcione
 
     }) /*Esto esta en login.php en el form*/
 
+    /*Btnsalir */
+    $(".BtnSalir").click(function(){
+        alertify.confirm("Cerrar Sesion","Seguro/a de cerrar la sesion",function(){
+            $("#data").load("./index.php?off=1");
+            setTimeout(function(){ window.location.href="index.php"; },1000);
+        }, function(){
+            alertify.error("<b style='color:white;'>Cierre cancelado...</b>");
+        });
+    });
+
 });

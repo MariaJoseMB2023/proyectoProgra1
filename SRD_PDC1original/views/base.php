@@ -45,8 +45,15 @@ if (isset($_GET["off"])) {
 
 </head>
 <!--este está en funciones.js se invoca en $("data").html(); especificamos en el .html() -->
+
 <body id="data"> <!--como se trabajará con js ponemos un id en el body-->
-    <div id="base*principal">
+    <?php
+    if (isset($_SESSION['login_ok'])) {
+        include './views/modulos/menus/navbar.php';
+    }
+
+    ?>
+    <div id="base-principal">
         <?php
         if (isset($_SESSION["login_ok"])) {
             include "./views/principal.php";
@@ -60,4 +67,16 @@ if (isset($_GET["off"])) {
 </body>
 
 </html>
-
+<script>
+    /*Btnsalir */
+    $(".BtnSalir").click(function() {
+        alertify.confirm("Cerrar Sesion", "Seguro/a de cerrar la sesion", function() {
+            $("#data").load("./index.php?off=1");
+            setTimeout(function() {
+                window.location.href = "index.php";
+            }, 1000);
+        }, function() {
+            alertify.error("<b style='color:white;'>Cierre cancelado...</b>");
+        });
+    });
+</script>

@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" style="margin-top:10px;">
     <div class="card">
         <div class="card-header">
             <b>Bienvenido: <?php ?></b>
@@ -7,7 +7,6 @@
             <h3 class="centrado"> 
                 <b>Sistema de Repositorio de Documentos (SRD)</b>
             </h3>
-            
         </div>
     </div>
 </div>
