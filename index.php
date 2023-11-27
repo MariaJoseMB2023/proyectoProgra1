@@ -6,5 +6,5 @@ $mvc = new Index();             /*Siempre que haremos uso de alguna clase haremo
 $mvc->base();                 /*Creamos un metodo llamado base*/
 
 
-echo password_hash("1234",PASSWORD_DEFAULT);
+//echo password_hash("1234",PASSWORD_DEFAULT);
 ?>

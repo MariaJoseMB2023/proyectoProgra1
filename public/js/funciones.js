@@ -1,14 +1,15 @@
 $(document).ready(function() { //dentro de él vamos a crear diferentes funciones o metodos, es como para crear la plantilla en js
     /* FORM Login Lo primero que se hara es que primero detecte que elemento ha sido seleccionado algún botón o algún enlace para realizar el sig proceso*/
     $("#form-login").on("submit", function() {
-        var formData = new FormData(document.getElementById("#form-login")) //Cuando vayamos a llamar elementos a traves del Id lo haremos con # cuando
-        formData.append("dato", "valor") //sea llamado a través de clase lo haremos con un punto*/
+        var formData = new FormData(document.getElementById("form-login")); //Cuando vayamos a llamar elementos a traves del Id lo haremos con # cuando
+        formData.append("dato", "valor"); //sea llamado a través de clase lo haremos con un punto*/
+
         //En este caso dato representa nombre de elemento en este caso el 
         //nombre sera user y clave que aparecen en el name del formulario en login.php 
-        $("#data").html('<div class="padre"><div class="hijo"><img src="../public/img/login/load4.gif" alt=""><hr><b>Un momento, por favor....</b></div></div>');
-
+        $("#data").html('<div class="padre"><div class="hijo"><img src="./public/img/login/load4.gif" alt=""><hr><b>Un momento, por favor....</b></div></div>');
+            
         $.ajax({
-            url: "../controllers/login.php",
+            url: "./controllers/login.php",
             type: "post",
             dataType: "html",  
             data: formData,

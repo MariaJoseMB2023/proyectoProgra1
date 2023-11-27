@@ -1,3 +1,4 @@
+-- Active: 1700944449298@@127.0.0.1@3306
 CREATE DATABASE srd_ujmd CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 USE srd_ujmd;
@@ -10,8 +11,8 @@ CREATE TABLE usuarios(
     estado INT
 );
 
-INSERT INTO usuarios (idusuario, usuario, clave, tipo, estado) VALUES
-(1, 'rigorellana', '$2y$10$zfhsLRDG8cSlh44v8EbgCe42Hcq.bpWm6MeiHRrMJb09Mgz5Y1TD6', 1, 1);
+INSERT INTO usuarios (usuario, clave, tipo, estado) VALUES       
+('marmorales', '$2y$10$0.5WQewU3502iP8kSWmPI.9B/CmrHAIKXXRa.Mztjtov0CtjjIbCK', 1, 1);
 
 CREATE TABLE categorias(
     idcategoria INT PRIMARY KEY AUTO_INCREMENT,

@@ -27,7 +27,7 @@ if (isset($_GET["off"])) {
     <?php endif ?>
     <!--CSS -->
     <link rel="stylesheet" href="./public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./public/css/">
+    <link rel="stylesheet" href="./public/css/style.css">
 
     <!--JS -->
     <script src="./public/js/jquery-3.5.1.slim.min.js"></script>
@@ -46,7 +46,7 @@ if (isset($_GET["off"])) {
 </head>
 <!--este está en funciones.js se invoca en $("data").html(); especificamos en el .html() -->
 <body id="data"> <!--como se trabajará con js ponemos un id en el body-->
-    <div id="base*principal">
+    <div id="base-principal">
         <?php
         if (isset($_SESSION["login_ok"])) {
             include "./views/principal.php";
