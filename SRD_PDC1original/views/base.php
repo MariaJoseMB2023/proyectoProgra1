@@ -26,21 +26,21 @@ if (isset($_GET["off"])) {
         <title>Login</title>
     <?php endif ?>
     <!--CSS -->
-    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../public/css/">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/">
 
     <!--JS -->
-    <script src="../public/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="../public/js/jquery-1.9.1.min.js"></script>
-    <script src="../public/js/funciones.js"></script>
-    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="./public/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./public/js/jquery-1.9.1.min.js"></script>
+    <script src="./public/js/funciones.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
 
     <!--Fontawesome -->
-    <script src="../public/fontawesome/fontawesome.js"></script>
+    <script src="./public/fontawesome/fontawesome.js"></script>
 
     <!--Alertify -->
-    <link rel="stylesheet" href="../public/alertify/alertify.min.css">
-    <script src="../public/alertify/alertify.min.js"></script>
+    <link rel="stylesheet" href="./public/alertify/alertify.min.css">
+    <script src="./public/alertify/alertify.min.js"></script>
 
 
 </head>

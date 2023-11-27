@@ -5,7 +5,7 @@ $(document).ready(function() { //dentro de él vamos a crear diferentes funcione
         formData.append("dato", "valor") //sea llamado a través de clase lo haremos con un punto*/
         //En este caso dato representa nombre de elemento en este caso el 
         //nombre sera user y clave que aparecen en el name del formulario en login.php 
-        $("#data").html('<div class="padre"><div class="hijo"><img src="../public/img/login/load4.gif" alt=""><hr><b>Un momento, por favor....</b></div></div>');
+        $("#data").html('<div class="padre"><div class="hijo"><img src="./public/img/login/load4.gif" alt=""><hr><b>Un momento, por favor....</b></div></div>');
 
         $.ajax({
             url: "../controllers/login.php",
